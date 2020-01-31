@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:id="@+id/icon_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#F8F8F8"
+                android:paddingLeft="15dp"
+                app:materialIcon="calendar_range"
+                app:materialIconColor="#F8F8F8"
+                app:materialIconSize="24dp" />
+
+            <TextView
+                android:id="@+id/tv_vehiculo_registro"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#F8F8F8"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="19/09/2017"
+                android:textColor="#F8F8F8"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            card_view:cardBackgroundColor="#F8F8F8"
+            card_view:cardCornerRadius="10dp"
+            card_view:contentPaddingLeft="15dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="475dp"
+                android:layout_height="wrap_content"
+                android:background="#F8F8F8"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <CheckBox
+                                android:id="@+id/checkItem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="" />
+
+                            <TextView
+                                android:id="@+id/txtNombre"
+                                android:layout_width="254dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="3"
+                                android:gravity="left"
+                                android:paddingLeft="5dp"
+                                android:text="JABON"
+                                android:textColor="#828282"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+                    </TableLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
